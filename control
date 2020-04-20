@@ -1,0 +1,9 @@
+Package: ru.anonz.vkpass
+Name: VKPass
+Depends: mobilesubstrate
+Version: 1.1-Alpha-JB
+Architecture: iphoneos-arm
+Description: Protect your VK with Passcode & TouchID!
+Maintainer: Alexander Orlov <anonym0uz@f0x.pw>
+Author: Alexander Orlov <anonym0uz@f0x.pw>
+Section: Tweaks

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>headerCellClass</key>
+			<string>VKPassLogo</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>General</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>ru.anonz.vkpassprefs</string>
+			<key>key</key>
+			<string>sPINEnabled</string>
+			<key>label</key>
+			<string>PIN Enabled</string>
+			<key>set</key>
+			<string>setPreferenceValue:specifier:</string>
+			<key>get</key>
+			<string>getPreferenceValue:</string>
+			<key>PostNotification</key>
+			<string>ru.anonz.vkpassbundle/post</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>ru.anonz.vkpassprefs</string>
+			<key>key</key>
+			<string>sDialPass</string>
+			<key>label</key>
+			<string>Enable dialogs passcode</string>
+			<key>set</key>
+			<string>setPreferenceValue:specifier:</string>
+			<key>get</key>
+			<string>getPreferenceValue:</string>
+			<key>PostNotification</key>
+			<string>ru.anonz.vkpassbundle/post</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>ru.anonz.vkpassprefs</string>
+			<key>key</key>
+			<string>sTouchID</string>
+			<key>label</key>
+			<string>Use Touch ID</string>
+			<key>set</key>
+			<string>setPreferenceValue:specifier:</string>
+			<key>get</key>
+			<string>getPreferenceValue:</string>
+			<key>PostNotification</key>
+			<string>ru.anonz.vkpassbundle/post</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Дополнительные</string>
+		</dict>
+		<dict>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>ru.anonz.vkpassprefs</string>
+			<key>key</key>
+			<string>timerPass</string>
+			<key>label</key>
+			<string>Request password</string>
+			<key>validTitles</key>
+			<array>
+				<string>After fully exiting VK application</string>
+				<string>After minimizing VK application</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+			</array>
+			<key>set</key>
+			<string>setPreferenceValue:specifier:</string>
+			<key>get</key>
+			<string>getPreferenceValue:</string>
+			<key>PostNotification</key>
+			<string>ru.anonz.vkpassbundle/post</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>If after deleting password switch &quot;Enable passcode&quot; is &quot;On&quot;, just reboot settings app or disable manual.</string>
+			<key>id</key>
+			<string>footerWarning</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>setPINVC</string>
+			<key>label</key>
+			<string>Change passcode</string>
+		</dict>
+		<dict>
+			<key>key</key>
+			<string>delButton</string>
+			<key>id</key>
+			<string>delButton</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>deletePINVC</string>
+			<key>label</key>
+			<string>Delete passcode</string>
+		</dict>
+		<dict>
+			<key>key</key>
+			<string>lostPass</string>
+			<key>id</key>
+			<string>lostPass</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>lostPass</string>
+			<key>label</key>
+			<string>Forgot password?</string>
+			<key>PostNotification</key>
+			<string>ru.anonz.vkpassbundle/post</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Other</string>
+			<key>footerText</key>
+			<string>Enable switch for copy VKPass settings to main menu, for quick access to them. Location nearby: Profile, Friends and etc.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>ru.anonz.vkpassprefs</string>
+			<key>key</key>
+			<string>settingsMenu</string>
+			<key>label</key>
+			<string>VKPass settings in main menu</string>
+			<key>set</key>
+			<string>setPreferenceValue:specifier:</string>
+			<key>get</key>
+			<string>getPreferenceValue:</string>
+			<key>PostNotification</key>
+			<string>ru.anonz.vkpassbundle/post</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Feedback</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>myVKLink</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Developer in VK</string>
+			<key>icon</key>
+			<string>myVK.png</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>cr0wAppsLink</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Community Cr0wApps in VK</string>
+			<key>icon</key>
+			<string>cr0wApps.png</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>sponsoredLink</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>With assistance of JailGeek community</string>
+			<key>icon</key>
+			<string>JailGeekVK.png</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>© Alexander &lt;Anonym0uz&gt; Orlov. OneScript. 2016-2019</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTitleValueCell</string>
+			<key>label</key>
+			<string>VK App version:</string>
+			<key>get</key>
+			<string>vkVersion:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTitleValueCell</string>
+			<key>label</key>
+			<string>VKPass version:</string>
+			<key>get</key>
+			<string>tweakVersion:</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>VKPass</string>
+</dict>
+</plist>
